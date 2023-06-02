@@ -13,8 +13,10 @@ If you want to see a specific feature in the next version of Vessel, we strongly
    1. For Ubuntu in `$HOME/bin` RUN `wget https://github.com/dfinity/vessel/releases/download/v0.6.4/vessel-linux64` 
 
       For macOS in `/usr/local/bin` RUN: `wget https://github.com/dfinity/vessel/releases/download/v0.6.4/vessel-macos` 
-   2. Rename vessel-linux64 to vessel eg: RUN `mv vessel-linux64 vessel`
-   3. Change permissions, `chmod +x vessel`
+   2. Rename the vessel
+         a. For Ubuntu, vessel-linux64 to vessel eg: RUN `mv vessel-linux64 vessel`
+         b. For macos, vessel-macos to vessel eg: RUN `mv vessel-macos vessel`
+   4. Change permissions, `chmod +x vessel`
 2. Run `vessel init` in your project root.
 3. Edit `vessel.dhall` to include your dependencies (potentially also edit
    `package-set.dhall` to include additional package sources)
